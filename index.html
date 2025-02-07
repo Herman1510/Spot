@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histology Spot Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h2>Identify the cell type in the histological image below:</h2>
+        <img src="squamous_cells.jpg" alt="Histological Image of Squamous Cells" class="quiz-image">
+        
+        <form id="quiz-form">
+            <label><input type="radio" name="answer" value="a"> A. Cuboidal cells</label><br>
+            <label><input type="radio" name="answer" value="b"> B. Columnar cells</label><br>
+            <label><input type="radio" name="answer" value="c"> C. Squamous cells</label><br>
+            <label><input type="radio" name="answer" value="d"> D. Transitional cells</label><br>
+
+            <button type="button" onclick="checkAnswer()">Submit</button>
+        </form>
+
+        <p id="result"></p>
+        <p class="footer">Presented to you by a man from the future</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
